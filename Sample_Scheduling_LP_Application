@@ -1,0 +1,8 @@
+#!/bin/bash
+
+for f in benchmarks/IB5CSDF/*.xml; do
+    echo "Running for $f"
+    ./Release/bin/kiter -f $f -a REALLP1 # INSERT DIFFERENT LP HERE
+done
+
+>_ chmod +x script.sh
